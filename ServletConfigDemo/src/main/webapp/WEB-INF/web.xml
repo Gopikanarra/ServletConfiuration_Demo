@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <servlet>
+    <servlet-name>ServletConfigHere</servlet-name>
+    <servlet-class>com.servletconfig.ServletConfigHere</servlet-class>
+    <init-param>
+      <param-name>jdbcurl</param-name>
+      <param-value>jdbc:mysql:///ineuron</param-value>
+    </init-param>
+    <init-param>
+      <param-name>user</param-name>
+      <param-value>root</param-value>
+    </init-param>
+    <init-param>
+      <param-name>password</param-name>
+      <param-value>gopikapassword</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletConfigHere</servlet-name>
+    <url-pattern>/ServletConfigHere</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>TestServletConfig</servlet-name>
+    <servlet-class>com.servletconfig.TestServletConfig</servlet-class>
+    <init-param>
+      <param-name>Company</param-name>
+      <param-value>ineuron</param-value>
+    </init-param>
+    <init-param>
+      <param-name>Mentor</param-name>
+      <param-value>nitin</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestServletConfig</servlet-name>
+    <url-pattern>/TestServletConfig</url-pattern>
+  </servlet-mapping>
+ 
+</web-app>
